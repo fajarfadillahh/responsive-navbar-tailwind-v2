@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar Tailwind V2</title>
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./dist/css/tailwind.css" />
+
+    <!-- Boxicons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="relative w-full z-50 px-4 border-b border-gray-100">
+      <div class="container mx-auto py-4 md:py-10">
+        <nav class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="nav__logo">Fajar Fadillah</div>
+
+          <!-- Navbar Toggle -->
+          <div
+            class="nav__toggle text-2xl cursor-pointer md:hidden"
+            id="nav-toggle"
+          >
+            <i class="bx bx-menu"></i>
+          </div>
+
+          <!-- Menu -->
+          <div
+            class="nav__menu fixed top-0 -right-full w-full h-full bg-yellow-300 flex justify-center items-center text-center transition-all duration-300 md:relative md:top-auto md:right-0 md:w-auto md:h-auto md:bg-transparent"
+            id="nav-menu"
+          >
+            <!-- Navbar Close -->
+            <div
+              class="nav__close absolute top-4 right-4 text-2xl cursor-pointer md:hidden"
+              id="nav-close"
+            >
+              <i class="bx bx-x"></i>
+            </div>
+
+            <ul class="nav__list md:flex">
+              <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-8">
+                <a href="#" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-8">
+                <a href="#" class="nav__link">About</a>
+              </li>
+              <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-8">
+                <a href="#" class="nav__link">Promo</a>
+              </li>
+              <li class="nav__item mb-8 hover:underline md:mb-0 md:ml-8">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Javascript -->
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
